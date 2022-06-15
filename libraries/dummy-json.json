@@ -1,0 +1,18 @@
+[
+  {
+    "org": "Apple",
+    "remote": null,
+    "website": "https://www.axelerant.com"
+  },
+  {
+    "org": "Axelerant",
+    "remote": true,
+    "website": "https://www.apple.com"
+  },
+  {
+    "org": "Google",
+    "remote": null,
+    "website": "https://www.google.com"
+  }
+]
+

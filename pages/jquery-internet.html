@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>jQuery | Drupal Training</title>
+    <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+
+    <script>
+      // It is good practice to execute scripts once the DOM is ready.
+      $(document).ready(function () {
+        $("button").click(function () {
+          $("#title-h1").toggle();
+        });
+      });
+
+      // console.log("Here is the debug value: " + (2 + 2));
+    </script>
+  </head>
+
+  <body>
+    <h1 id="title-h1">Learn jQuery (Internet)</h1>
+    <p>"Write less, do more", a JavaScript library.</p>
+
+    <button type="button">Click to hide/show title</button>
+  </body>
+
+</html>
