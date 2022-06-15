@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>jQuery | Drupal Training</title>
+    <!-- Downloaded the compressed jQuery file from https://jquery.com/download -->
+    <script src="../libraries/jquery-3.6.0.min.js"></script>
+
+    <script>
+      // It is good practice to execute scripts once the DOM is ready.
+      $(document).ready(function () {
+        $("button").click(function () {
+          var resource = "https://raw.githubusercontent.com/axelerant-trainings/adbt-learn-html/main/libraries/dummy-json.json";
+
+          // Ajax request.
+          $.get(resource, function (data, status) {
+            // console.log(data);
+            // console.log(status);
+
+            var data_obj = JSON.parse(data);
+            // console.log(data_obj);
+
+            $(data_obj).each(function(index) {
+              if (data_obj[index].remote) {
+                alert(data_obj[index].org + " is a remote organisation.");
+              }
+            });
+
+          });
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <h1 id="title-h1">Learn jQuery (AJAX)</h1>
+    <p>"Write less, do more", a JavaScript library.</p>
+
+    <button type="button">Show remote organisations</button>
+  </body>
+
+</html>
